@@ -1,0 +1,3 @@
+set,target,variant,sigma,n_cells,per_pitch_mae,n_overall,overall_mae,top20_overlap,overlap_of,bar_mae,bar_overlap,passes_per_pitch,passes_overall,passes_overlap
+fit,Tarik Skubal,tjstats_6_pitcher_both,1.7444,78,2.3319808582412813,20,0.9973176061477339,19,20,5.0,15,True,True,True
+holdout,Zack Wheeler,tjstats_6_pitcher_both,1.7444,81,2.023523916415974,19,1.2251347675446935,18,19,5.0,15,True,True,True

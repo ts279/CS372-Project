@@ -1,0 +1,202 @@
+[device] mps
+[data] pitches (train + val) (2122236, 27); arsenal rows (14883, 26); pitcher-seasons (3218, 30)
+[data] t1 train: 1,416,892 labeled pitches x 34 features; 1,606 pitcher-seasons, 1,149 with >= 300 pitches
+[data] t1 val: 704,303 labeled pitches x 34 features; 803 pitcher-seasons, 573 with >= 300 pitches
+[data] t1 arsenal sets (3218, 9, 19); RV/100 train mean -0.03, SD 0.96
+
+[run] t1_emb8: tier t1, d_emb 8, lam 1.0, dropout 0.1, lr 0.002
+[t1_emb8] epoch  1  train CE 1.2055  val CE 1.1420  val profile 1.6928  val RV mse 1.175  val r 0.211  lr 2.0e-03  2s
+[t1_emb8] epoch  2  train CE 1.1462  val CE 1.1388  val profile 1.6925  val RV mse 1.265  val r 0.199  lr 2.0e-03  2s
+[t1_emb8] epoch  3  train CE 1.1388  val CE 1.1306  val profile 1.6923  val RV mse 1.272  val r 0.237  lr 2.0e-03  2s
+[t1_emb8] epoch  4  train CE 1.1349  val CE 1.1284  val profile 1.6919  val RV mse 1.267  val r 0.269  lr 2.0e-03  2s
+[t1_emb8] epoch  5  train CE 1.1324  val CE 1.1261  val profile 1.6919  val RV mse 1.304  val r 0.217  lr 2.0e-03  2s
+[t1_emb8] epoch  6  train CE 1.1295  val CE 1.1263  val profile 1.6918  val RV mse 1.301  val r 0.252  lr 2.0e-03  2s
+[t1_emb8] epoch  7  train CE 1.1280  val CE 1.1247  val profile 1.6918  val RV mse 1.284  val r 0.244  lr 2.0e-03  2s
+[t1_emb8] epoch  8  train CE 1.1264  val CE 1.1237  val profile 1.6917  val RV mse 1.266  val r 0.230  lr 2.0e-03  2s
+[t1_emb8] epoch  9  train CE 1.1251  val CE 1.1226  val profile 1.6916  val RV mse 1.279  val r 0.220  lr 2.0e-03  2s
+[t1_emb8] epoch 10  train CE 1.1238  val CE 1.1213  val profile 1.6916  val RV mse 1.266  val r 0.228  lr 2.0e-03  2s
+[t1_emb8] epoch 11  train CE 1.1228  val CE 1.1210  val profile 1.6916  val RV mse 1.287  val r 0.259  lr 2.0e-03  2s
+[t1_emb8] epoch 12  train CE 1.1217  val CE 1.1199  val profile 1.6914  val RV mse 1.249  val r 0.238  lr 2.0e-03  2s
+[t1_emb8] epoch 13  train CE 1.1214  val CE 1.1201  val profile 1.6914  val RV mse 1.255  val r 0.239  lr 2.0e-03  2s
+[t1_emb8] epoch 14  train CE 1.1207  val CE 1.1178  val profile 1.6914  val RV mse 1.250  val r 0.244  lr 2.0e-03  2s
+[t1_emb8] epoch 15  train CE 1.1201  val CE 1.1208  val profile 1.6913  val RV mse 1.257  val r 0.205  lr 2.0e-03  2s
+[t1_emb8] epoch 16  train CE 1.1193  val CE 1.1191  val profile 1.6914  val RV mse 1.270  val r 0.227  lr 1.0e-03  2s
+[t1_emb8] epoch 17  train CE 1.1170  val CE 1.1163  val profile 1.6913  val RV mse 1.257  val r 0.238  lr 1.0e-03  2s
+[t1_emb8] epoch 18  train CE 1.1169  val CE 1.1159  val profile 1.6914  val RV mse 1.288  val r 0.206  lr 1.0e-03  2s
+[t1_emb8] epoch 19  train CE 1.1165  val CE 1.1168  val profile 1.6913  val RV mse 1.266  val r 0.229  lr 1.0e-03  2s
+[t1_emb8] epoch 20  train CE 1.1165  val CE 1.1155  val profile 1.6914  val RV mse 1.283  val r 0.218  lr 1.0e-03  2s
+[t1_emb8] epoch 21  train CE 1.1162  val CE 1.1162  val profile 1.6913  val RV mse 1.261  val r 0.225  lr 1.0e-03  2s
+[t1_emb8] epoch 22  train CE 1.1160  val CE 1.1165  val profile 1.6913  val RV mse 1.270  val r 0.180  lr 5.0e-04  2s
+[t1_emb8] epoch 23  train CE 1.1146  val CE 1.1150  val profile 1.6913  val RV mse 1.281  val r 0.180  lr 5.0e-04  2s
+[t1_emb8] epoch 24  train CE 1.1143  val CE 1.1154  val profile 1.6913  val RV mse 1.274  val r 0.187  lr 5.0e-04  2s
+[t1_emb8] epoch 25  train CE 1.1144  val CE 1.1154  val profile 1.6914  val RV mse 1.289  val r 0.202  lr 2.5e-04  2s
+[t1_emb8] epoch 26  train CE 1.1136  val CE 1.1148  val profile 1.6913  val RV mse 1.269  val r 0.174  lr 2.5e-04  2s
+[t1_emb8] epoch 27  train CE 1.1134  val CE 1.1153  val profile 1.6913  val RV mse 1.272  val r 0.178  lr 2.5e-04  2s
+[t1_emb8] epoch 28  train CE 1.1134  val CE 1.1150  val profile 1.6913  val RV mse 1.272  val r 0.193  lr 1.3e-04  2s
+[t1_emb8] epoch 29  train CE 1.1131  val CE 1.1150  val profile 1.6913  val RV mse 1.275  val r 0.177  lr 1.3e-04  2s
+[t1_emb8] early stop: no improvement for 3 epochs (best epoch 26)
+[t1_emb8] best epoch 26: val log loss 1.1148 (class-prior baseline 1.6959); 2025 retrieval r 0.174, MAE 0.813 (no-similarity baseline 0.788); 1.0 min
+
+[run] t1_emb16: tier t1, d_emb 16, lam 1.0, dropout 0.1, lr 0.002
+[t1_emb16] epoch  1  train CE 1.2054  val CE 1.1435  val profile 1.6926  val RV mse 1.252  val r 0.201  lr 2.0e-03  2s
+[t1_emb16] epoch  2  train CE 1.1479  val CE 1.1372  val profile 1.6925  val RV mse 1.401  val r 0.209  lr 2.0e-03  2s
+[t1_emb16] epoch  3  train CE 1.1392  val CE 1.1295  val profile 1.6924  val RV mse 1.406  val r 0.207  lr 2.0e-03  2s
+[t1_emb16] epoch  4  train CE 1.1347  val CE 1.1286  val profile 1.6922  val RV mse 1.416  val r 0.178  lr 2.0e-03  2s
+[t1_emb16] epoch  5  train CE 1.1317  val CE 1.1262  val profile 1.6921  val RV mse 1.383  val r 0.174  lr 2.0e-03  2s
+[t1_emb16] epoch  6  train CE 1.1292  val CE 1.1246  val profile 1.6918  val RV mse 1.374  val r 0.193  lr 2.0e-03  2s
+[t1_emb16] epoch  7  train CE 1.1278  val CE 1.1241  val profile 1.6919  val RV mse 1.384  val r 0.178  lr 2.0e-03  2s
+[t1_emb16] epoch  8  train CE 1.1261  val CE 1.1233  val profile 1.6917  val RV mse 1.364  val r 0.155  lr 2.0e-03  2s
+[t1_emb16] epoch  9  train CE 1.1245  val CE 1.1223  val profile 1.6916  val RV mse 1.338  val r 0.135  lr 2.0e-03  2s
+[t1_emb16] epoch 10  train CE 1.1236  val CE 1.1209  val profile 1.6915  val RV mse 1.302  val r 0.191  lr 2.0e-03  2s
+[t1_emb16] epoch 11  train CE 1.1227  val CE 1.1218  val profile 1.6915  val RV mse 1.340  val r 0.165  lr 2.0e-03  2s
+[t1_emb16] epoch 12  train CE 1.1213  val CE 1.1199  val profile 1.6916  val RV mse 1.356  val r 0.162  lr 2.0e-03  2s
+[t1_emb16] epoch 13  train CE 1.1207  val CE 1.1200  val profile 1.6916  val RV mse 1.346  val r 0.177  lr 2.0e-03  2s
+[t1_emb16] epoch 14  train CE 1.1200  val CE 1.1180  val profile 1.6915  val RV mse 1.298  val r 0.156  lr 2.0e-03  2s
+[t1_emb16] epoch 15  train CE 1.1191  val CE 1.1215  val profile 1.6917  val RV mse 1.335  val r 0.152  lr 2.0e-03  2s
+[t1_emb16] epoch 16  train CE 1.1185  val CE 1.1194  val profile 1.6916  val RV mse 1.292  val r 0.192  lr 1.0e-03  2s
+[t1_emb16] epoch 17  train CE 1.1160  val CE 1.1161  val profile 1.6916  val RV mse 1.295  val r 0.151  lr 1.0e-03  2s
+[t1_emb16] epoch 18  train CE 1.1157  val CE 1.1158  val profile 1.6915  val RV mse 1.298  val r 0.167  lr 1.0e-03  2s
+[t1_emb16] epoch 19  train CE 1.1152  val CE 1.1170  val profile 1.6916  val RV mse 1.308  val r 0.127  lr 1.0e-03  2s
+[t1_emb16] epoch 20  train CE 1.1152  val CE 1.1153  val profile 1.6916  val RV mse 1.311  val r 0.154  lr 1.0e-03  2s
+[t1_emb16] epoch 21  train CE 1.1147  val CE 1.1164  val profile 1.6916  val RV mse 1.301  val r 0.144  lr 1.0e-03  2s
+[t1_emb16] epoch 22  train CE 1.1146  val CE 1.1167  val profile 1.6917  val RV mse 1.305  val r 0.148  lr 5.0e-04  2s
+[t1_emb16] epoch 23  train CE 1.1132  val CE 1.1150  val profile 1.6916  val RV mse 1.319  val r 0.121  lr 5.0e-04  2s
+[t1_emb16] epoch 24  train CE 1.1128  val CE 1.1154  val profile 1.6916  val RV mse 1.304  val r 0.146  lr 5.0e-04  2s
+[t1_emb16] epoch 25  train CE 1.1129  val CE 1.1151  val profile 1.6916  val RV mse 1.294  val r 0.168  lr 2.5e-04  2s
+[t1_emb16] epoch 26  train CE 1.1123  val CE 1.1147  val profile 1.6917  val RV mse 1.315  val r 0.145  lr 2.5e-04  2s
+[t1_emb16] epoch 27  train CE 1.1122  val CE 1.1151  val profile 1.6917  val RV mse 1.309  val r 0.152  lr 2.5e-04  2s
+[t1_emb16] epoch 28  train CE 1.1119  val CE 1.1147  val profile 1.6916  val RV mse 1.306  val r 0.140  lr 1.3e-04  2s
+[t1_emb16] epoch 29  train CE 1.1115  val CE 1.1146  val profile 1.6916  val RV mse 1.312  val r 0.153  lr 1.3e-04  2s
+[t1_emb16] early stop: no improvement for 3 epochs (best epoch 26)
+[t1_emb16] best epoch 26: val log loss 1.1147 (class-prior baseline 1.6959); 2025 retrieval r 0.145, MAE 0.810 (no-similarity baseline 0.788); 1.0 min
+
+[run] t1_emb32: tier t1, d_emb 32, lam 1.0, dropout 0.1, lr 0.002
+[t1_emb32] epoch  1  train CE 1.2067  val CE 1.1435  val profile 1.6926  val RV mse 1.275  val r 0.198  lr 2.0e-03  2s
+[t1_emb32] epoch  2  train CE 1.1455  val CE 1.1376  val profile 1.6924  val RV mse 1.346  val r 0.205  lr 2.0e-03  2s
+[t1_emb32] epoch  3  train CE 1.1396  val CE 1.1301  val profile 1.6923  val RV mse 1.373  val r 0.206  lr 2.0e-03  2s
+[t1_emb32] epoch  4  train CE 1.1343  val CE 1.1270  val profile 1.6921  val RV mse 1.372  val r 0.205  lr 2.0e-03  2s
+[t1_emb32] epoch  5  train CE 1.1307  val CE 1.1255  val profile 1.6920  val RV mse 1.323  val r 0.192  lr 2.0e-03  2s
+[t1_emb32] epoch  6  train CE 1.1283  val CE 1.1236  val profile 1.6919  val RV mse 1.345  val r 0.182  lr 2.0e-03  2s
+[t1_emb32] epoch  7  train CE 1.1269  val CE 1.1232  val profile 1.6920  val RV mse 1.325  val r 0.190  lr 2.0e-03  2s
+[t1_emb32] epoch  8  train CE 1.1254  val CE 1.1223  val profile 1.6917  val RV mse 1.324  val r 0.179  lr 2.0e-03  2s
+[t1_emb32] epoch  9  train CE 1.1243  val CE 1.1220  val profile 1.6916  val RV mse 1.281  val r 0.133  lr 2.0e-03  2s
+[t1_emb32] epoch 10  train CE 1.1233  val CE 1.1210  val profile 1.6917  val RV mse 1.301  val r 0.088  lr 2.0e-03  2s
+[t1_emb32] epoch 11  train CE 1.1226  val CE 1.1217  val profile 1.6917  val RV mse 1.298  val r 0.127  lr 2.0e-03  2s
+[t1_emb32] epoch 12  train CE 1.1211  val CE 1.1205  val profile 1.6917  val RV mse 1.288  val r 0.095  lr 2.0e-03  2s
+[t1_emb32] epoch 13  train CE 1.1205  val CE 1.1205  val profile 1.6917  val RV mse 1.290  val r 0.109  lr 2.0e-03  2s
+[t1_emb32] epoch 14  train CE 1.1199  val CE 1.1183  val profile 1.6917  val RV mse 1.288  val r 0.074  lr 2.0e-03  2s
+[t1_emb32] epoch 15  train CE 1.1189  val CE 1.1213  val profile 1.6918  val RV mse 1.311  val r 0.103  lr 2.0e-03  2s
+[t1_emb32] epoch 16  train CE 1.1185  val CE 1.1197  val profile 1.6919  val RV mse 1.276  val r 0.103  lr 1.0e-03  2s
+[t1_emb32] epoch 17  train CE 1.1157  val CE 1.1164  val profile 1.6919  val RV mse 1.308  val r 0.101  lr 1.0e-03  2s
+[t1_emb32] epoch 18  train CE 1.1152  val CE 1.1164  val profile 1.6919  val RV mse 1.301  val r 0.093  lr 1.0e-03  2s
+[t1_emb32] epoch 19  train CE 1.1152  val CE 1.1177  val profile 1.6919  val RV mse 1.311  val r 0.130  lr 5.0e-04  2s
+[t1_emb32] epoch 20  train CE 1.1135  val CE 1.1157  val profile 1.6919  val RV mse 1.296  val r 0.125  lr 5.0e-04  2s
+[t1_emb32] epoch 21  train CE 1.1137  val CE 1.1153  val profile 1.6920  val RV mse 1.299  val r 0.110  lr 5.0e-04  2s
+[t1_emb32] epoch 22  train CE 1.1133  val CE 1.1168  val profile 1.6920  val RV mse 1.305  val r 0.112  lr 5.0e-04  2s
+[t1_emb32] epoch 23  train CE 1.1130  val CE 1.1155  val profile 1.6921  val RV mse 1.317  val r 0.121  lr 2.5e-04  2s
+[t1_emb32] epoch 24  train CE 1.1123  val CE 1.1157  val profile 1.6921  val RV mse 1.316  val r 0.134  lr 2.5e-04  2s
+[t1_emb32] early stop: no improvement for 3 epochs (best epoch 21)
+[t1_emb32] best epoch 21: val log loss 1.1153 (class-prior baseline 1.6959); 2025 retrieval r 0.110, MAE 0.804 (no-similarity baseline 0.788); 0.8 min
+
+[sweep] selected t1_emb8 (highest 2025 retrieval r)
+     run  val_pitch_logloss  val_retrieval_r  val_retrieval_mae  best_epoch
+ t1_emb8           1.114834         0.174446           0.813125          26
+t1_emb16           1.114667         0.145401           0.810000          26
+t1_emb32           1.115348         0.109970           0.803519          21
+[save] docs/results/training_curves.csv  (142 rows)
+[save] docs/figures/training_curves.png
+[save] models/arsenal_net_t1.pt, embeddings_t1.parquet
+[data] t1 train: 1,416,892 labeled pitches x 34 features; 1,606 pitcher-seasons, 1,149 with >= 300 pitches
+[data] t1 val: 704,303 labeled pitches x 34 features; 803 pitcher-seasons, 573 with >= 300 pitches
+[data] t1 arsenal sets (3218, 9, 19); RV/100 train mean -0.03, SD 0.96
+
+[run] t1_aux_off: tier t1, d_emb 8, lam 0.0, dropout 0.1, lr 0.002
+[t1_aux_off] epoch  1  train CE 1.2021  val CE 1.1396  val profile 1.9174  val RV mse 1.088  val r 0.130  lr 2.0e-03  2s
+[t1_aux_off] epoch  2  train CE 1.1416  val CE 1.1325  val profile 1.9189  val RV mse 1.085  val r 0.125  lr 2.0e-03  2s
+[t1_aux_off] epoch  3  train CE 1.1339  val CE 1.1261  val profile 1.9190  val RV mse 1.084  val r 0.159  lr 2.0e-03  2s
+[t1_aux_off] epoch  4  train CE 1.1302  val CE 1.1238  val profile 1.9175  val RV mse 1.083  val r 0.176  lr 2.0e-03  2s
+[t1_aux_off] epoch  5  train CE 1.1276  val CE 1.1226  val profile 1.9181  val RV mse 1.080  val r 0.166  lr 2.0e-03  2s
+[t1_aux_off] epoch  6  train CE 1.1253  val CE 1.1224  val profile 1.9180  val RV mse 1.079  val r 0.192  lr 2.0e-03  2s
+[t1_aux_off] epoch  7  train CE 1.1241  val CE 1.1209  val profile 1.9178  val RV mse 1.077  val r 0.182  lr 2.0e-03  2s
+[t1_aux_off] epoch  8  train CE 1.1226  val CE 1.1205  val profile 1.9184  val RV mse 1.076  val r 0.196  lr 2.0e-03  2s
+[t1_aux_off] epoch  9  train CE 1.1213  val CE 1.1204  val profile 1.9186  val RV mse 1.076  val r 0.201  lr 2.0e-03  2s
+[t1_aux_off] epoch 10  train CE 1.1202  val CE 1.1191  val profile 1.9200  val RV mse 1.079  val r 0.143  lr 2.0e-03  2s
+[t1_aux_off] epoch 11  train CE 1.1191  val CE 1.1198  val profile 1.9186  val RV mse 1.079  val r 0.163  lr 2.0e-03  2s
+[t1_aux_off] epoch 12  train CE 1.1179  val CE 1.1174  val profile 1.9175  val RV mse 1.075  val r 0.192  lr 2.0e-03  2s
+[t1_aux_off] epoch 13  train CE 1.1174  val CE 1.1183  val profile 1.9189  val RV mse 1.077  val r 0.111  lr 2.0e-03  2s
+[t1_aux_off] epoch 14  train CE 1.1166  val CE 1.1161  val profile 1.9187  val RV mse 1.075  val r 0.071  lr 2.0e-03  2s
+[t1_aux_off] epoch 15  train CE 1.1159  val CE 1.1185  val profile 1.9184  val RV mse 1.079  val r 0.110  lr 2.0e-03  2s
+[t1_aux_off] epoch 16  train CE 1.1152  val CE 1.1175  val profile 1.9186  val RV mse 1.074  val r 0.101  lr 1.0e-03  2s
+[t1_aux_off] epoch 17  train CE 1.1124  val CE 1.1138  val profile 1.9180  val RV mse 1.074  val r 0.104  lr 1.0e-03  2s
+[t1_aux_off] epoch 18  train CE 1.1121  val CE 1.1138  val profile 1.9193  val RV mse 1.075  val r 0.119  lr 1.0e-03  2s
+[t1_aux_off] epoch 19  train CE 1.1116  val CE 1.1151  val profile 1.9184  val RV mse 1.075  val r 0.099  lr 5.0e-04  2s
+[t1_aux_off] epoch 20  train CE 1.1103  val CE 1.1132  val profile 1.9179  val RV mse 1.075  val r 0.120  lr 5.0e-04  2s
+[t1_aux_off] epoch 21  train CE 1.1098  val CE 1.1131  val profile 1.9186  val RV mse 1.073  val r 0.096  lr 5.0e-04  2s
+[t1_aux_off] epoch 22  train CE 1.1097  val CE 1.1147  val profile 1.9177  val RV mse 1.073  val r 0.081  lr 5.0e-04  2s
+[t1_aux_off] epoch 23  train CE 1.1095  val CE 1.1131  val profile 1.9185  val RV mse 1.072  val r 0.088  lr 2.5e-04  2s
+[t1_aux_off] epoch 24  train CE 1.1085  val CE 1.1134  val profile 1.9189  val RV mse 1.073  val r 0.083  lr 2.5e-04  2s
+[t1_aux_off] early stop: no improvement for 3 epochs (best epoch 21)
+[t1_aux_off] best epoch 21: val log loss 1.1131 (class-prior baseline 1.6959); 2025 retrieval r 0.096, MAE 0.821 (no-similarity baseline 0.788); 0.7 min
+[data] t3a train: 1,416,892 labeled pitches x 19 features; 1,606 pitcher-seasons, 1,149 with >= 300 pitches
+[data] t3a val: 704,303 labeled pitches x 19 features; 803 pitcher-seasons, 573 with >= 300 pitches
+[data] t3a arsenal sets (3218, 9, 6); RV/100 train mean -0.03, SD 0.96
+
+[run] t3a_aux_on: tier t3a, d_emb 8, lam 1.0, dropout 0.1, lr 0.002
+[t3a_aux_on] epoch  1  train CE 1.4647  val CE 1.4543  val profile 1.5312  val RV mse 1.116  val r 0.141  lr 2.0e-03  2s
+[t3a_aux_on] epoch  2  train CE 1.4574  val CE 1.4532  val profile 1.5310  val RV mse 1.345  val r 0.144  lr 2.0e-03  2s
+[t3a_aux_on] epoch  3  train CE 1.4561  val CE 1.4526  val profile 1.5309  val RV mse 1.381  val r 0.101  lr 2.0e-03  2s
+[t3a_aux_on] epoch  4  train CE 1.4555  val CE 1.4524  val profile 1.5309  val RV mse 1.429  val r 0.156  lr 2.0e-03  2s
+[t3a_aux_on] epoch  5  train CE 1.4550  val CE 1.4519  val profile 1.5310  val RV mse 1.427  val r 0.190  lr 2.0e-03  2s
+[t3a_aux_on] epoch  6  train CE 1.4543  val CE 1.4513  val profile 1.5310  val RV mse 1.406  val r 0.206  lr 2.0e-03  2s
+[t3a_aux_on] epoch  7  train CE 1.4539  val CE 1.4511  val profile 1.5311  val RV mse 1.401  val r 0.232  lr 2.0e-03  2s
+[t3a_aux_on] epoch  8  train CE 1.4533  val CE 1.4508  val profile 1.5311  val RV mse 1.370  val r 0.227  lr 2.0e-03  2s
+[t3a_aux_on] epoch  9  train CE 1.4529  val CE 1.4513  val profile 1.5311  val RV mse 1.369  val r 0.236  lr 2.0e-03  2s
+[t3a_aux_on] epoch 10  train CE 1.4527  val CE 1.4508  val profile 1.5311  val RV mse 1.362  val r 0.237  lr 1.0e-03  2s
+[t3a_aux_on] epoch 11  train CE 1.4517  val CE 1.4503  val profile 1.5311  val RV mse 1.366  val r 0.244  lr 1.0e-03  2s
+[t3a_aux_on] epoch 12  train CE 1.4513  val CE 1.4503  val profile 1.5311  val RV mse 1.360  val r 0.231  lr 1.0e-03  2s
+[t3a_aux_on] epoch 13  train CE 1.4513  val CE 1.4500  val profile 1.5311  val RV mse 1.360  val r 0.217  lr 1.0e-03  2s
+[t3a_aux_on] epoch 14  train CE 1.4511  val CE 1.4499  val profile 1.5311  val RV mse 1.345  val r 0.222  lr 1.0e-03  2s
+[t3a_aux_on] epoch 15  train CE 1.4509  val CE 1.4501  val profile 1.5311  val RV mse 1.354  val r 0.201  lr 5.0e-04  2s
+[t3a_aux_on] epoch 16  train CE 1.4503  val CE 1.4498  val profile 1.5311  val RV mse 1.342  val r 0.220  lr 5.0e-04  2s
+[t3a_aux_on] epoch 17  train CE 1.4501  val CE 1.4497  val profile 1.5311  val RV mse 1.348  val r 0.217  lr 5.0e-04  2s
+[t3a_aux_on] epoch 18  train CE 1.4502  val CE 1.4498  val profile 1.5311  val RV mse 1.356  val r 0.206  lr 2.5e-04  2s
+[t3a_aux_on] epoch 19  train CE 1.4498  val CE 1.4497  val profile 1.5311  val RV mse 1.341  val r 0.211  lr 2.5e-04  2s
+[t3a_aux_on] epoch 20  train CE 1.4497  val CE 1.4496  val profile 1.5311  val RV mse 1.348  val r 0.205  lr 2.5e-04  2s
+[t3a_aux_on] epoch 21  train CE 1.4497  val CE 1.4495  val profile 1.5311  val RV mse 1.349  val r 0.210  lr 2.5e-04  2s
+[t3a_aux_on] epoch 22  train CE 1.4496  val CE 1.4496  val profile 1.5311  val RV mse 1.347  val r 0.212  lr 1.3e-04  2s
+[t3a_aux_on] epoch 23  train CE 1.4494  val CE 1.4495  val profile 1.5311  val RV mse 1.344  val r 0.219  lr 1.3e-04  2s
+[t3a_aux_on] early stop: no improvement for 3 epochs (best epoch 20)
+[t3a_aux_on] best epoch 20: val log loss 1.4496 (class-prior baseline 1.5328); 2025 retrieval r 0.205, MAE 0.782 (no-similarity baseline 0.788); 0.7 min
+
+[run] t3a_aux_off: tier t3a, d_emb 8, lam 0.0, dropout 0.1, lr 0.002
+[t3a_aux_off] epoch  1  train CE 1.4638  val CE 1.4530  val profile 1.6157  val RV mse 1.082  val r 0.147  lr 2.0e-03  2s
+[t3a_aux_off] epoch  2  train CE 1.4555  val CE 1.4509  val profile 1.6186  val RV mse 1.081  val r 0.192  lr 2.0e-03  2s
+[t3a_aux_off] epoch  3  train CE 1.4540  val CE 1.4502  val profile 1.6200  val RV mse 1.082  val r 0.179  lr 2.0e-03  2s
+[t3a_aux_off] epoch  4  train CE 1.4529  val CE 1.4496  val profile 1.6187  val RV mse 1.081  val r 0.192  lr 2.0e-03  2s
+[t3a_aux_off] epoch  5  train CE 1.4522  val CE 1.4492  val profile 1.6179  val RV mse 1.081  val r 0.198  lr 2.0e-03  2s
+[t3a_aux_off] epoch  6  train CE 1.4515  val CE 1.4482  val profile 1.6200  val RV mse 1.082  val r 0.185  lr 2.0e-03  2s
+[t3a_aux_off] epoch  7  train CE 1.4511  val CE 1.4479  val profile 1.6188  val RV mse 1.080  val r 0.192  lr 2.0e-03  2s
+[t3a_aux_off] epoch  8  train CE 1.4504  val CE 1.4482  val profile 1.6215  val RV mse 1.079  val r 0.210  lr 2.0e-03  2s
+[t3a_aux_off] epoch  9  train CE 1.4501  val CE 1.4482  val profile 1.6210  val RV mse 1.081  val r 0.192  lr 1.0e-03  2s
+[t3a_aux_off] epoch 10  train CE 1.4488  val CE 1.4474  val profile 1.6204  val RV mse 1.080  val r 0.220  lr 1.0e-03  2s
+[t3a_aux_off] epoch 11  train CE 1.4484  val CE 1.4472  val profile 1.6206  val RV mse 1.080  val r 0.240  lr 1.0e-03  2s
+[t3a_aux_off] epoch 12  train CE 1.4481  val CE 1.4471  val profile 1.6211  val RV mse 1.079  val r 0.233  lr 1.0e-03  2s
+[t3a_aux_off] epoch 13  train CE 1.4480  val CE 1.4472  val profile 1.6199  val RV mse 1.081  val r 0.208  lr 5.0e-04  2s
+[t3a_aux_off] epoch 14  train CE 1.4472  val CE 1.4467  val profile 1.6207  val RV mse 1.080  val r 0.219  lr 5.0e-04  2s
+[t3a_aux_off] epoch 15  train CE 1.4471  val CE 1.4470  val profile 1.6210  val RV mse 1.081  val r 0.246  lr 5.0e-04  2s
+[t3a_aux_off] epoch 16  train CE 1.4470  val CE 1.4469  val profile 1.6204  val RV mse 1.081  val r 0.234  lr 2.5e-04  2s
+[t3a_aux_off] epoch 17  train CE 1.4465  val CE 1.4465  val profile 1.6202  val RV mse 1.080  val r 0.237  lr 2.5e-04  2s
+[t3a_aux_off] epoch 18  train CE 1.4465  val CE 1.4468  val profile 1.6206  val RV mse 1.081  val r 0.242  lr 2.5e-04  2s
+[t3a_aux_off] epoch 19  train CE 1.4464  val CE 1.4468  val profile 1.6202  val RV mse 1.079  val r 0.247  lr 1.3e-04  2s
+[t3a_aux_off] epoch 20  train CE 1.4462  val CE 1.4465  val profile 1.6198  val RV mse 1.080  val r 0.247  lr 1.3e-04  2s
+[t3a_aux_off] early stop: no improvement for 3 epochs (best epoch 17)
+[t3a_aux_off] best epoch 17: val log loss 1.4465 (class-prior baseline 1.5328); 2025 retrieval r 0.237, MAE 0.770 (no-similarity baseline 0.788); 0.6 min
+
+[ablation]
+        run  val_retrieval_r  val_retrieval_mae  val_pitch_logloss
+  t1_aux_on         0.174446           0.813125           1.114834
+ t1_aux_off         0.096416           0.820820           1.113124
+ t3a_aux_on         0.204806           0.782113           1.449571
+t3a_aux_off         0.236798           0.770265           1.446511
+[save] docs/results/training_curves.csv  (149 rows)
+[done] 4.9 min

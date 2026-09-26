@@ -1,0 +1,32 @@
+section,item,value
+load,raw pitches,2955003.0
+filter_removed,regular season only,109491.0
+filter_removed,"valid count (0-3 balls, 0-2 strikes)",0.0
+filter_removed,pitch-clock violations (no pitch thrown),9838.0
+filter_removed,"bunt attempts (author's call, D13)",10964.0
+filter_removed,missing pitch type or core tracking,1240.0
+filter_removed,KN / EP / FA / PO / UN pitch types,8451.0
+filter_removed,position players pitching (statsapi),785.0
+load,pitches kept,2814234.0
+split_pitches,train,1417523.0
+split_pitch_share,train,0.5037
+split_pitcher_seasons,train,1606.0
+split_pitches,val,704713.0
+split_pitch_share,val,0.2504
+split_pitcher_seasons,val,803.0
+split_pitches,test,691998.0
+split_pitch_share,test,0.2459
+split_pitcher_seasons,test,809.0
+role_300_pitches,test RP,340.0
+role_300_pitches,test SP,217.0
+role_300_pitches,train RP,699.0
+role_300_pitches,train SP,450.0
+role_300_pitches,val RP,344.0
+role_300_pitches,val SP,229.0
+label7_share,called_strike,0.164
+label7_share,ball,0.3608
+label7_share,whiff,0.1216
+label7_share,foul,0.1809
+label7_share,poor,0.1052
+label7_share,flare,0.0425
+label7_share,damage,0.0251

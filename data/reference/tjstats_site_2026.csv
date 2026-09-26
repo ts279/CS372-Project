@@ -1,0 +1,21 @@
+set,target,target_hand,row_kind,rank,comp,team,matched,pitch_type,site_pct
+single_pitch,Cam Schlittler,R,target,0,Cam Schlittler,NYY,,FF,100
+single_pitch,Cam Schlittler,R,comp,1,Robert Suarez,ATL,,FF,98
+single_pitch,Cam Schlittler,R,comp,2,Hunter Greene,CIN,,FF,94
+single_pitch,Cam Schlittler,R,comp,3,Daniel Espino,CLE,,FF,88
+single_pitch,Cam Schlittler,R,comp,4,Nate Pearson,KC,,FF,84
+single_pitch,Cam Schlittler,R,comp,5,Bobby Miller,LAD,,FF,84
+single_pitch,Cam Schlittler,R,comp,6,David Sandlin,CWS,,FF,82
+single_pitch,Cam Schlittler,R,comp,7,Jonathan Bowlan,PHI,,FF,82
+single_pitch,Cam Schlittler,R,comp,8,Luis Severino,ATH,,FF,79
+single_pitch,Cam Schlittler,R,comp,9,Ryan Zeferjahn,LAA,,FF,77
+single_pitch,Cam Schlittler,R,comp,10,Justin Slaten,BOS,,FF,75
+single_pitch,Cam Schlittler,R,comp,11,Ben Brown,CHC,,FF,75
+single_pitch,Cam Schlittler,R,comp,12,Bubba Chandler,PIT,,FF,75
+single_pitch,Cam Schlittler,R,comp,13,Wilber Dotel,PIT,,FF,74
+single_pitch,Cam Schlittler,R,comp,14,Max Kranick,WSH,,FF,74
+single_pitch,Cam Schlittler,R,comp,15,Cameron Foster,BAL,,FF,74
+single_pitch,Cam Schlittler,R,comp,16,Caleb Kilian,SF,,FF,74
+single_pitch,Cam Schlittler,R,comp,17,Tyler Davis,CWS,,FF,74
+single_pitch,Cam Schlittler,R,comp,18,Kyle Nicolas,CIN,,FF,73
+single_pitch,Cam Schlittler,R,comp,19,Hunter Brown,HOU,,FF,72

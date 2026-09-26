@@ -1,0 +1,27 @@
+{
+  "team_games": {
+    "2023": 162.0,
+    "2024": 161.9,
+    "2025": 162.0,
+    "2026": 158.2
+  },
+  "min_pitches": 300,
+  "savant_pitches_per_team_game": 2.5,
+  "reliever_scale": 0.441,
+  "count_states": [
+    "first pitch",
+    "ahead",
+    "even",
+    "behind"
+  ],
+  "attack_zones": [
+    "heart",
+    "shadow",
+    "chase",
+    "waste"
+  ],
+  "published": {
+    "t1": "t1_emb8_profile_s372",
+    "t3a": "t3a_emb8_profile_s372"
+  }
+}

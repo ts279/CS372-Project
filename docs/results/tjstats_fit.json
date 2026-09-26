@@ -1,0 +1,141 @@
+{
+  "generated_by": "python -m src.eval.tjstats_fidelity",
+  "date": "2026-09-25",
+  "season": 2025,
+  "source": "https://tjstats.ca/pitch-similarity/ (How It Works); site values in data/reference/tjstats_site_2025.csv",
+  "chosen_variant": "tjstats_6_pitcher_both",
+  "sigma": 1.7444,
+  "metrics": [
+    "release_speed",
+    "ivb_in",
+    "hb_arm_in",
+    "release_extension",
+    "release_height",
+    "arm_angle"
+  ],
+  "z_population": "pitcher",
+  "z_hands": "both",
+  "min_type_pitches": 10,
+  "kernel": "s = exp(-d^2 / (2 sigma^2)), d^2 = sum of squared z-score differences",
+  "selection_rule": "lowest fit (Skubal) per-pitch MAE after the sigma fit; within 0.1 pt -> higher Spearman",
+  "fit": {
+    "n_cells": 78,
+    "per_pitch_mae": 2.3319808582412813,
+    "overall_mae": 0.9973176061477339,
+    "top20_overlap": 19
+  },
+  "holdout": {
+    "n_cells": 81,
+    "per_pitch_mae": 2.023523916415974,
+    "overall_mae": 1.2251347675446935,
+    "top20_overlap": 18,
+    "overlap_of": 19
+  },
+  "holdout_passes": {
+    "per_pitch": true,
+    "overall": true,
+    "overlap": true
+  },
+  "hidden_row": "holdout rank 1: 2 candidates (Keller, Mitch (656605), Ram\u00edrez, Yohan (670990)); row excluded from the MAEs, overlap counted over the 19 named rows",
+  "name_problems": [],
+  "target_fs_diagnostic": "Garrett Crochet: site 13, ours 23.3 (target FS kept at n >= 1)",
+  "usage_check_pct": [
+    {
+      "set": "fit",
+      "pitch_type": "CH",
+      "site_pct": 31.0,
+      "ours_pct": 31.44,
+      "diff_pts": 0.44,
+      "n": 892
+    },
+    {
+      "set": "fit",
+      "pitch_type": "CU",
+      "site_pct": 3.0,
+      "ours_pct": 2.78,
+      "diff_pts": -0.22,
+      "n": 79
+    },
+    {
+      "set": "fit",
+      "pitch_type": "FF",
+      "site_pct": 29.0,
+      "ours_pct": 29.36,
+      "diff_pts": 0.36,
+      "n": 833
+    },
+    {
+      "set": "fit",
+      "pitch_type": "FS",
+      "site_pct": 0.0,
+      "ours_pct": 0.11,
+      "diff_pts": 0.11,
+      "n": 3
+    },
+    {
+      "set": "fit",
+      "pitch_type": "SI",
+      "site_pct": 24.0,
+      "ours_pct": 23.83,
+      "diff_pts": -0.17,
+      "n": 676
+    },
+    {
+      "set": "fit",
+      "pitch_type": "SL",
+      "site_pct": 12.0,
+      "ours_pct": 12.48,
+      "diff_pts": 0.48,
+      "n": 354
+    },
+    {
+      "set": "holdout",
+      "pitch_type": "CU",
+      "site_pct": 10.0,
+      "ours_pct": 9.67,
+      "diff_pts": -0.33,
+      "n": 231
+    },
+    {
+      "set": "holdout",
+      "pitch_type": "FC",
+      "site_pct": 9.0,
+      "ours_pct": 8.58,
+      "diff_pts": -0.42,
+      "n": 205
+    },
+    {
+      "set": "holdout",
+      "pitch_type": "FF",
+      "site_pct": 41.0,
+      "ours_pct": 40.91,
+      "diff_pts": -0.09,
+      "n": 977
+    },
+    {
+      "set": "holdout",
+      "pitch_type": "FS",
+      "site_pct": 9.0,
+      "ours_pct": 8.84,
+      "diff_pts": -0.16,
+      "n": 211
+    },
+    {
+      "set": "holdout",
+      "pitch_type": "SI",
+      "site_pct": 17.0,
+      "ours_pct": 17.09,
+      "diff_pts": 0.09,
+      "n": 408
+    },
+    {
+      "set": "holdout",
+      "pitch_type": "ST",
+      "site_pct": 15.0,
+      "ours_pct": 14.91,
+      "diff_pts": -0.09,
+      "n": 356
+    }
+  ],
+  "one_implementation_check": true
+}
